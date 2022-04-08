@@ -36,7 +36,10 @@
               v-for="time in onesData.schedule"
               v-bind:key="time.id"
             >
-              <div v-if="time.shift === true" class="bg-primary p-2 m-0 bg-gradient opacity-90">
+              <div
+                v-if="time.shift === true"
+                class="bg-primary p-2 m-0 bg-gradient opacity-90"
+              >
                 〇
               </div>
               <div v-else class="bg-light p-2 m-0">✕</div>
